@@ -6,9 +6,62 @@
 
 body {
 font-family: 'Raleway', sans-serif;
+}
+
+.first {
+  position: fixed;
+}
+
+.name {
+  padding-left: 30px;
+  color: DodgerBlue;
 
 }
 
+/* nicht verwendet */
+.menu {
+  padding-left: 30px;
+}
+
+
+.point {
+  margin: 0.5 0.5 0.5 0em;
+  padding-left: 30px;
+  color: LightCoral;
+}
+
+.clicked {
+  color: orange;
+  margin: 0.5 0.5 0.5 0em;
+  padding-left: 30px;
+  color: DodgerBlue;
+}
+
+
+.circular {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+        overflow:hidden;
+}
+
+
+.circular-left {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+        overflow:hidden;
+    float: left;
+}
+
+.me {
+  background-image: url("images/me/1491786_10156719412990241_1414870557112898588_n.jpg");
+  background-repeat: no-repeat;
+}
 
 
 
@@ -28,6 +81,14 @@ font-family: 'Raleway', sans-serif;
   }
 }
 
+a {
+  /*nicht unterstrichen*/
+  text-decoration: none;
+  color: black;
+}
+
+
+
 
 img {
   width: 100%;
@@ -43,23 +104,45 @@ img {
 }
 
 
+.row {
+  width: 100%;
+  height: 50%;
+}
 
+.pictureleft {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
 
+}
 
-.circular {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-        overflow:hidden;
+.picturemiddle {
+  display: inline-block;
+  width:30%;
+  height: 100%;
+
+}
+
+.pictureright {
+  display: inline-block;
+  width:30%;
+  height: 100%;
 }
 
 
-.me {
-  background-image: url("images/me/1491786_10156719412990241_1414870557112898588_n.jpg");
-  background-repeat: no-repeat;
+
+.box-outer {
+  height: 100%;
+  width: 100%;
 }
+
+.box-inner {
+  display: inline-block;
+  width: 100%;
+  height: 30%;
+}
+
+
 
 
 .chapter-3 {
@@ -79,14 +162,22 @@ img {
 }
 
 .chapter-3 a {
-  color: black;
+  color: white;
 }
 
 .chapter-3 a:hover {
   color: white;
 }
 
-.chapter-3 a:hover h1,
+.chapter-3 a:hover h1 {
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+
 .chapter-3 a:hover h3 {
   -webkit-transform: scale(1.4);
   -moz-transform: scale(1.4);
