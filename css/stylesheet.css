@@ -41,13 +41,15 @@ font-family: 'Raleway', sans-serif;
 .unten {
   position: fixed;
   display: inline-block;
+  float: left;
 }
 
 
 .zwischen {
   width: 1em;
-  height: 26em;
+  height: 12em;
   display: inline-block;
+  border: solid 2px;
 }
 
 
@@ -60,7 +62,7 @@ font-family: 'Raleway', sans-serif;
 
 
 .box {
-  border: 2px dashed LightCoral;
+  border: 2px solid DodgerBlue;
 }
 
 
@@ -101,11 +103,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-@media only screen and (min-width: 720px) {
-  .row {
-    padding: 1.5em 4em;
-  }
-}
+
 
 a {
   /*nicht unterstrichen*/
@@ -114,13 +112,12 @@ a {
 }
 
 
-
-
 img {
-  width: 100%;
-  height: auto;
-  max-height: 700px;
+  width: auto;
+  height: 100%;
+  max-height: 300px;
 }
+
 
 
 
@@ -132,29 +129,29 @@ img {
 
 .row {
   width: 100%;
-  height: auto;
+  height: 60%;
   display: inline-block;
 }
 
 .pictureleft {
   display: inline-block;
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 30%;
   margin: 5 0 5 0px;
 
 }
 
 .picturemiddle {
   display: inline-block;
-  width:30%;
-  height: auto;
+  width:auto;
+  height: 30%;
   margin: 5 5 5 5px;
 }
 
 .pictureright {
   display: inline-block;
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 30%;
   margin: 5 0 5 0px;
 }
 
